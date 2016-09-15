@@ -12,7 +12,8 @@ public class ScreenDelegate {
     public enum Screens {
         LINEAR_LAYOUT_SCREEN,
         RELATIVE_LAYOUT_SCREEN,
-        SHOWCASE_SCREEN
+        SHOWCASE_SCREEN,
+        CATS_SCREEN
     }
 
 

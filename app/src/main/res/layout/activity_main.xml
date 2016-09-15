@@ -32,4 +32,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
         android:text="To Showcase!"/>
+
+    <Button
+        android:id="@+id/to_cats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="To Cats!"/>
 </LinearLayout>
