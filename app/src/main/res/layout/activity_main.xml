@@ -25,4 +25,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
         android:text="To Linear_Layout!"/>
+
+    <Button
+        android:id="@+id/to_showcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="To Showcase!"/>
 </LinearLayout>

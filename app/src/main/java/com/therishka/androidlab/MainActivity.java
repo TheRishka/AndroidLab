@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button toRelative = (Button) findViewById(R.id.to_relative);
         Button toLinear = (Button) findViewById(R.id.to_linear);
+        Button toShowcase = (Button) findViewById(R.id.to_showcase);
 
         toRelative.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         toLinear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                handleClicks(view.getId());
+            }
+        });
+
+        toShowcase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 handleClicks(view.getId());
@@ -39,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.to_relative:
                 ScreenDelegate.startScreen(ScreenDelegate.Screens.RELATIVE_LAYOUT_SCREEN, this);
+                break;
+            case R.id.to_showcase:
+                ScreenDelegate.startScreen(ScreenDelegate.Screens.SHOWCASE_SCREEN, this);
                 break;
         }
     }
