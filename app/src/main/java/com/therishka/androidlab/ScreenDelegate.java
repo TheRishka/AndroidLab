@@ -13,7 +13,8 @@ public class ScreenDelegate {
         LINEAR_LAYOUT_SCREEN,
         RELATIVE_LAYOUT_SCREEN,
         SHOWCASE_SCREEN,
-        CATS_SCREEN
+        CATS_SCREEN,
+        COLORS_SCREEN
     }
 
 
@@ -35,6 +36,9 @@ public class ScreenDelegate {
                 break;
             case CATS_SCREEN:
                 screenIntent = new Intent(activity, KittenActivity.class);
+                break;
+            case COLORS_SCREEN:
+                screenIntent = new Intent(activity, ColorActivity.class);
                 break;
             default:
                 screenIntent = new Intent(activity, LinearLayoutActivity.class);

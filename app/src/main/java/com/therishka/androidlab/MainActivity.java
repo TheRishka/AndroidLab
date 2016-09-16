@@ -15,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
         Button toRelative = (Button) findViewById(R.id.to_relative);
         Button toLinear = (Button) findViewById(R.id.to_linear);
         Button toShowcase = (Button) findViewById(R.id.to_showcase);
-        Button toCats = (Button) findViewById(R.id.to_cats);
+        Button toCats = (Button) findViewById(R.id.to_cat);
+        Button toColors = (Button) findViewById(R.id.to_colors);
+
+        // TODO:
+        // small task: how to optimise this?
 
         toRelative.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 handleClicks(view.getId());
             }
         });
+
+        toColors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                handleClicks(view.getId());
+            }
+        });
     }
 
     private void handleClicks(@IdRes int buttonId) {
@@ -57,8 +68,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.to_showcase:
                 ScreenDelegate.startScreen(ScreenDelegate.Screens.SHOWCASE_SCREEN, this);
                 break;
-            case R.id.to_cats:
-                ScreenDelegate.startScreen(ScreenDelegate.Screens.CATS_SCREEN, this);;
+            case R.id.to_cat:
+                ScreenDelegate.startScreen(ScreenDelegate.Screens.CATS_SCREEN, this);
+                break;
+            case R.id.to_colors:
+                ScreenDelegate.startScreen(ScreenDelegate.Screens.COLORS_SCREEN, this);
         }
     }
 }
