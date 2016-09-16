@@ -17,6 +17,7 @@
         <activity android:name=".LinearLayoutActivity"/>
         <activity android:name=".RelativeLayoutActivity"/>
         <activity android:name=".ViewsShowcase"/>
+        <activity android:name=".KittenActivity"/>
     </application>
 
 </manifest>

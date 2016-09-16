@@ -1,53 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                tools:ignore="HardcodedText">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
 
     <EditText
         android:id="@+id/cat_name_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:hint="Введите имя котика"/>
+        android:hint="Введите имя котика" />
 
     <TextView
         android:id="@+id/cat_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cat_name_input"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttons"
+        android:layout_above="@+id/button"
         android:layout_below="@+id/cat_name"
-        android:src="@drawable/cat"/>
+        android:scaleType="centerInside"
+        android:src="@drawable/cat" />
 
-    <LinearLayout
-        android:id="@+id/buttons"
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/previous_cat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="<--"/>
-
-        <Button
-            android:id="@+id/next_cat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="-->"/>
-
-    </LinearLayout>
+        android:text="Назвать!" />
 
 </RelativeLayout>

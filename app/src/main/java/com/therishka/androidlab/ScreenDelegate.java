@@ -33,6 +33,9 @@ public class ScreenDelegate {
             case SHOWCASE_SCREEN:
                 screenIntent = new Intent(activity, ViewsShowcase.class);
                 break;
+            case CATS_SCREEN:
+                screenIntent = new Intent(activity, KittenActivity.class);
+                break;
             default:
                 screenIntent = new Intent(activity, LinearLayoutActivity.class);
         }
