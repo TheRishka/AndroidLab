@@ -23,6 +23,17 @@ public class ColorActivity extends AppCompatActivity {
         rootLayout = (RelativeLayout) findViewById(R.id.root_layout);
     }
 
+    /*
+    TODO:
+    find and set click listeners to EditText and Button. When
+    Button clicked - call changeRootColor() method and pass there
+    text from EditText widget. Be careful: text must be valid!
+    Not empty and in #FFFFFF format. If u pass non-valid text
+    the app will crash.
+    Don't forget to call showError() method in case of non-valid text.
+
+     */
+
     private void changeRootColor(@NonNull String color) {
         int colorInt = Color.parseColor(color);
         rootLayout.setBackgroundColor(colorInt);
