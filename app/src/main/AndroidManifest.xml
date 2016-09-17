@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.therishka.androidlab">
+          package="com.therishka.androidlab">
 
     <application
         android:allowBackup="true"
@@ -9,16 +9,17 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".LinearLayoutActivity" />
-        <activity android:name=".RelativeLayoutActivity" />
-        <activity android:name=".ViewsShowcase" />
-        <activity android:name=".KittenActivity" />
-        <activity android:name=".ColorActivity" />
+        <activity android:name=".LinearLayoutActivity"/>
+        <activity android:name=".RelativeLayoutActivity"/>
+        <activity android:name=".ViewsShowcase"/>
+        <activity android:name=".KittenActivity"/>
+        <activity android:name=".ColorActivity"/>
+        <activity android:name=".ListActivity"/>
     </application>
 
 </manifest>

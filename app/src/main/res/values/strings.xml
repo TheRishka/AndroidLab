@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidLab</string>
+    <string name="text">Текст</string>
 </resources>
